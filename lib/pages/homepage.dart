@@ -33,6 +33,8 @@ class _HomePageState extends State<HomePage> {
     //map data
     itemData =
         List.from(items0).map((e) => DataItemsModel.fromJson(e)).toList();
+    //setState() for set the json data
+    setState(() {});
   }
 
   @override
@@ -44,7 +46,10 @@ class _HomePageState extends State<HomePage> {
             children: [
               Image.asset("assets/images/homeimage.webp"),
               const SizedBox(height: 10),
-              MyButton(),
+              for (int i = 0; i < itemData.length; i++)
+                MyButton(
+                  item1: itemData[i],
+                )
             ],
           ),
         ),
