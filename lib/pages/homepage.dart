@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:love_tips/widgets/my_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,6 +13,9 @@ class HomePage extends StatelessWidget {
             children: [
               Image.asset("assets/images/homeimage.webp"),
               const SizedBox(height: 10),
+              MyButton(),
+              MyButton(),
+              MyButton()
             ],
           ),
         ),
