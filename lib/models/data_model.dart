@@ -1,14 +1,14 @@
 //class name Items and json file ni object nu name same items
 
-class Items {
+class DataItemsModel {
   int? id;
   String? name;
   String? shotdesc;
   String? desc;
 
-  Items({this.id, this.name, this.shotdesc, this.desc});
+  DataItemsModel({this.id, this.name, this.shotdesc, this.desc});
 
-  Items.fromJson(Map<String, dynamic> json) {
+  DataItemsModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
     shotdesc = json['shotdesc'];
