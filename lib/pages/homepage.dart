@@ -31,7 +31,8 @@ class _HomePageState extends State<HomePage> {
     //
     var items0 = decodedData['items'];
     //map data
-    List.from(items0).map((e) => DataItemsModel.fromJson(e)).toList();
+    itemData =
+        List.from(items0).map((e) => DataItemsModel.fromJson(e)).toList();
   }
 
   @override
