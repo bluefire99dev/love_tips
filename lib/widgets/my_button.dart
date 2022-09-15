@@ -1,7 +1,6 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-
 import 'package:love_tips/models/data_model.dart';
+import 'package:love_tips/pages/details_page.dart';
 
 class MyButton extends StatelessWidget {
   //
@@ -34,7 +33,13 @@ class MyButton extends StatelessWidget {
 
         child: InkWell(
           //3nd for animation
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailPage(item2: item1),
+                ));
+          },
 
           child: Container(
             //1st
