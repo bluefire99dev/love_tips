@@ -52,7 +52,7 @@ class MyButton extends StatelessWidget {
             ),
             child: Text(
               item1.name!.toUpperCase(),
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.white70,
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
