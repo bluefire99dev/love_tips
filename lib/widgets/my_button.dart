@@ -50,8 +50,8 @@ class MyButton extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(10)),
               border: Border.all(width: 4, color: Colors.pink.shade500),
             ),
-            child: const Text(
-              "hello",
+            child: Text(
+              item1.name!.toUpperCase(),
               style: TextStyle(
                   color: Colors.white70,
                   fontSize: 16,

@@ -14,13 +14,18 @@ class DetailPage extends StatelessWidget {
           children: [
             Text(
               item2.shotdesc!,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              style: const TextStyle(
+                  color: Colors.red, fontWeight: FontWeight.bold, fontSize: 20),
             ),
             const SizedBox(height: 20),
             Text(
               item2.desc!,
-              style:
-                  const TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+              textAlign: TextAlign.justify,
+              textDirection: TextDirection.ltr,
+              style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal),
             ),
           ],
         ),
